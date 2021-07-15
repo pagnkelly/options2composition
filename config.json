@@ -1,0 +1,7 @@
+{
+  "j2t": {
+    "type": "node",
+    "desc": "convert json string into typescript defines, ms j2t <json> [name]",
+    "path": "./j2t.js"
+  }
+}
