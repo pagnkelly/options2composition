@@ -119,7 +119,7 @@ function genCode(code) {
 
 
 let json = {}
-let params = args[0].replace(/_enter_/g, '\n').replace(/_nbsp_/g, ' ') // myshell will make params in cmd line, here to fix it
+let params = args[0].replace(/_enter_/g, '\n').replace(/_nbsp_/g, ' ').replace(/_squote_/g, '\'') // myshell will make params in cmd line, here to fix it
 try {
   json = JSON.parse(params)
 } catch (err) {
