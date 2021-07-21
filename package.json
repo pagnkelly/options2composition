@@ -1,0 +1,31 @@
+{
+  "name": "json2ts",
+  "version": "1.0.0",
+  "description": "A script running on [myshell](https://github.com/ms-ecology/myshell), make json into typescript defination.",
+  "main": "j2t.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ms-ecology/json2ts.git"
+  },
+  "author": "anothersola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ms-ecology/json2ts/issues"
+  },
+  "homepage": "https://github.com/ms-ecology/json2ts#readme",
+  "dependencies": {
+    "monaco-editor": "^0.26.1"
+  },
+  "devDependencies": {
+    "css-loader": "^6.2.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "monaco-editor-webpack-plugin": "^4.1.1",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
