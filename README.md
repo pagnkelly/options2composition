@@ -1,23 +1,10 @@
-# json2ts
+# options2composition
 
-A script running on [myshell](https://github.com/ms-ecology/myshell), make json into typescript defination.
+mpx选项式代码转换成组合式API代码
 
 ## Usage
 
-```sh
-ms add json2ts # add script into myshell
-```
+![](https://gift-static.hongyibo.com.cn/static/kfpub/3227/HUbjD7l4uiThasrGVgpbS.png)
 
-**Examples**
 
-```sh
-# simple case
-ms j2t '{}'
-# ts module with name
-ms j2t '{ "name": 1 }' People
-# complex case
-ms j2t '{ a: 1, b: [true], c: [{n: 1}, { n: "", b: 2}, { n: 2, c: true }] }'
-# write define into file
-ms j2t '{ a: 1, b: [true], c: [{n: 1}, { n: "", b: 2}, { n: 2, c: true }] }' > Test.d.ts
-```
 
