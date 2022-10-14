@@ -92,7 +92,7 @@ window.onload = () => {
     if (val) {
       genCode(`const {`)
       val.forEach(item => {
-        genCode(`  ${item}`)
+        genCode(`  ${item},`)
       })
       genCode(`} = store.${key}([${val.toString()}])`)
     }
