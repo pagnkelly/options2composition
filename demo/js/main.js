@@ -43,9 +43,9 @@ window.onload = () => {
         case 'methods':
           Object.keys(obj).forEach(k => {
             let str = obj[k].toString()
-            str = str.replace(k+'()', '')
-            str = str.replace(k+' ()', '')
-            genCode(`const ${k} = () =>${str}`)
+            str = str.replace(k, '')
+            str = str.replace(/(\(.*\))/, '$1 =>')
+            genCode(`const ${k} = ${str}`)
           })
           break;
         case 'watch':
