@@ -94,7 +94,7 @@ window.onload = () => {
       val.forEach(item => {
         genCode(`  ${item},`)
       })
-      genCode(`} = store.${key}([${val.toString()}])`)
+      genCode(`} = store.${key}(${JSON.stringify(val)})`)
     }
   }
 
