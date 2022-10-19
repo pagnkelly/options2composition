@@ -66,7 +66,7 @@ window.onload = () => {
               handler = handler.replace('handler', '')
               handler = handler.replace(/(\(.*\))/, '$1 =>')
               delete obj.handler
-              genCode(`watch(${watchValue},${handler}, ${JSON.stringify(obj[k])})`)
+              genCode(`watch(${watchValue},${handler}, ${JSON.stringify(obj[k]).replaceAll('"', '')})`)
             }
           })
           break;
